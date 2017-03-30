@@ -17,6 +17,29 @@
         android:icon="@drawable/ic_delete_white_18dp"
         android:title="delete"
         app:showAsAction="ifRoom" />
+
+    <item
+        android:id="@+id/action_listview"
+        android:orderInCategory="100"
+        android:title="ListView"
+        app:showAsAction="never" />
+    <item
+        android:id="@+id/action_gridview"
+        android:orderInCategory="100"
+        android:title="GridView"
+        app:showAsAction="never" />
+    <item
+        android:id="@+id/action_hor_gridview"
+        android:orderInCategory="100"
+        android:title="HorizontalGridView"
+        app:showAsAction="never" />
+
+    <item
+        android:id="@+id/action_staggered"
+        android:orderInCategory="100"
+        android:title="Staggered"
+        app:showAsAction="never" />
+
     <item
         android:id="@+id/action_settings"
         android:orderInCategory="100"

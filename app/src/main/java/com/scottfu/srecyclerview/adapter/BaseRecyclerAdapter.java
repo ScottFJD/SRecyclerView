@@ -18,7 +18,7 @@ import java.util.List;
 
 public class BaseRecyclerAdapter extends RecyclerView.Adapter<MyViewHolder> {
 
-    private List<String> mDatas;
+    protected List<String> mDatas;
     private LayoutInflater mIntlater;
     private Context mContext;
 
@@ -60,6 +60,10 @@ public class BaseRecyclerAdapter extends RecyclerView.Adapter<MyViewHolder> {
             holder.itemView.setOnClickListener(new View.OnClickListener() {
                 @Override
                 public void onClick(View v) {
+//                   注意这里的position的获取为什么不沿用上面onBindViewHolder 里面的position
+//                   因为在添加一个item之后notifyItemInserted 并没有对所有的view进行刷新
+//                   只是对inserted item进行了刷新 position会一直是inserted item的值
+//                   所以直接用holder.getLayoutPosition() 获取布局上面的位置
                     int pos = holder.getLayoutPosition();
                     onItemClickListener.onItemClick(holder.itemView,pos);
                 }
