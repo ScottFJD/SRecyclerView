@@ -39,6 +39,11 @@
         android:orderInCategory="100"
         android:title="Staggered"
         app:showAsAction="never" />
+    <item
+        android:id="@+id/action_cardview"
+        android:orderInCategory="100"
+        android:title="CardView"
+        app:showAsAction="never" />
 
     <item
         android:id="@+id/action_settings"

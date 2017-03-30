@@ -23,6 +23,10 @@
         <activity android:name=".StaggeredActivity"
             android:label="StaggeredRecyclerView"
             android:theme="@style/AppTheme.NoActionBar"/>
+
+        <activity android:name=".CardViewActivity"
+            android:label="CardView"
+            android:theme="@style/AppTheme.NoActionBar"/>
     </application>
 
 </manifest>
